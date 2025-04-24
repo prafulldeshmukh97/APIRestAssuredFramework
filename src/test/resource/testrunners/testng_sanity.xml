@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Thirs party API Test Regression Suite" verbose="4">
+
+
+	<test name="reqrec User Test">
+		<parameter name="baseUrl" value="https://reqres.in"></parameter>
+		<classes>
+			<class name="com.qa.reqres_api_tests.recResTest" />
+		</classes>
+	</test>
+
+
+</suite>

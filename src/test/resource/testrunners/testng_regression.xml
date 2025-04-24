@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="API Test Regression Suite" verbose="4">
+	<listeners>
+    <listener class-name="com.qa.api.listeners.ExtentReportListener" />
+</listeners>
+
+	<test name="Create User Test">
+
+		<classes>
+			<class name="com.qa.api.tests.CreateUserTest" />
+		</classes>
+	</test>
+	<test name="Delete User Test">
+
+		<classes>
+			<class name="com.qa.api.tests.DeleteUserTest" />
+		</classes>
+	</test>
+	<test name="Get User Test">
+
+		<classes>
+			<class name="com.qa.api.tests.GetUserTest" />
+		</classes>
+	</test>
+	<test name="Patch User Test">
+
+		<classes>
+			<class name="com.qa.api.tests.PatchUserTest" />
+		</classes>
+	</test>
+
+	<test name="Update User Test">
+
+		<classes>
+			<class name="com.qa.api.tests.UpdateUserTest" />
+		</classes>
+	</test>
+	<test name="reqrec User Test">
+
+		<classes>
+			<class name="com.qa.reqres_api_tests.recResTest" />
+		</classes>
+	</test>
+
+	<test name="Products API Test">
+
+		<classes>
+			<class name="com.qa.producs.api.test.ProductsAPITest" />
+		</classes>
+	</test>
+	<test name="Amaedus API Test">
+
+		<classes>
+			<class name="com.qa.api.oauth2.test.AmedusApiTest" />
+		</classes>
+	</test>
+	<test name="Basic AUth Test API Test">
+
+		<classes>
+			<class name="com.qa.api.basicauth.tests.BasicAuthTest" />
+		</classes>
+	</test>
+
+
+</suite>
