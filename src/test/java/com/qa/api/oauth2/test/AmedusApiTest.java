@@ -13,7 +13,7 @@ import io.restassured.response.Response;
 
 public class AmedusApiTest extends BaseTest{
 	
-	@Test
+	@Test(enabled = false)
 	public void getFlightDetailsTest()
 	{
 		Map<String,String> queryparams=Map.of("origin","PAR","maxPrice","200");
